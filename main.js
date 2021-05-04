@@ -9,25 +9,29 @@ window.onload=function()
     //typeIt
     new TypeIt("#main.type-effect", {
         waitUntilVisible: true,
-        speed:50
+        speed:40
     })
-        .type('Data <strong>Scientist</strong>, ')
-        .pause(500)
-        .type('User Experience <strong>Developer</strong>, ')
-        .pause(500)
-        .type('and Human-Centered <strong>Designer</strong>.')
+        .type('Aspiring Product Manger and Front End Software Engineer')
         .go();
 
     new TypeIt("#major", {
         waitUntilVisible: true,
         speed:20
     })
-        .type('Computer Science Major')
-        .pause(500)
-        .break()
-        .type("Data Science and Interactive Media & Game Development Minors")
+        .type('Computer Science Major and Data Science Minor')
+        // .pause(500)
+        // .break()
+        // .type("Data Science Minor")
         .go();
 
+
+    new TypeIt("#mission",{
+        waitUntilVisible:true,
+        speed: 30
+    })
+        .pause(2500)
+        .type('Discover and fulfill underlying user demands to drive better design and curate unique solutions')
+        .go();
 
     //animate.css
     const element = document.querySelector("h1")
@@ -61,7 +65,7 @@ window.onload=function()
     });
 
 //waypoint
-//still cannot figure out why 
+
     var sticky = new Waypoint.Sticky({
         element: $('#stuck')[0]
     })

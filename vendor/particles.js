@@ -268,7 +268,6 @@ var pJS = function(tag_id, params){
     /* color */
     this.color = {};
     if(typeof(color.value) == 'object'){
-
       if(color.value instanceof Array){
         var color_selected = color.value[Math.floor(Math.random() * pJS.particles.color.value.length)];
         this.color.rgb = hexToRgb(color_selected);
@@ -610,28 +609,21 @@ var pJS = function(tag_id, params){
       if(pJS.particles.line_linked.enable || pJS.particles.move.attract.enable){
         for(var j = i + 1; j < pJS.particles.array.length; j++){
           var p2 = pJS.particles.array[j];
-
           /* link particles */
           if(pJS.particles.line_linked.enable){
             pJS.fn.interact.linkParticles(p,p2);
           }
-
           /* attract particles */
           if(pJS.particles.move.attract.enable){
             pJS.fn.interact.attractParticles(p,p2);
           }
-
           /* bounce particles */
           if(pJS.particles.move.bounce){
             pJS.fn.interact.bounceParticles(p,p2);
           }
-
         }
       }
-
-
     }
-
   };
 
   pJS.fn.particlesDraw = function(){
