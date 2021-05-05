@@ -2,10 +2,6 @@ window.onload=function()
 {
     //other animations
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-    particlesJS.load('particles-js', 'vendor/particles.json', function() {
-        console.log('callback - particles.js config loaded');
-    });
-
     //typeIt
     new TypeIt("#main.type-effect", {
         waitUntilVisible: true,
@@ -64,17 +60,17 @@ window.onload=function()
 
     });
 
-//waypoint
-
-    var sticky = new Waypoint.Sticky({
-        element: $('#stuck')[0]
-    })
-    var waypoint = new Waypoint({
-        element: document.getElementById('stuck'),
-        handler: function(direction) {
-            alert('Triggered once, now destroyed')
-            this.destroy()
-        },
-        offset: 'bottom-in-view'
-    })
+// //waypoint
+//
+//     var sticky = new Waypoint.Sticky({
+//         element: $('#stuck')[0]
+//     })
+//     var waypoint = new Waypoint({
+//         element: document.getElementById('stuck'),
+//         handler: function(direction) {
+//             alert('Triggered once, now destroyed')
+//             this.destroy()
+//         },
+//         offset: 'bottom-in-view'
+//     })
 }

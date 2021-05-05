@@ -40,7 +40,6 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
       return originalRefresh.call(this)
     }
   }
-
   checkWaypointStyles()
 }())
 ;
